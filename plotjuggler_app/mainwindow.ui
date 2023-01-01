@@ -147,7 +147,6 @@
              <property name="font">
               <font>
                <pointsize>9</pointsize>
-               <weight>50</weight>
                <bold>false</bold>
               </font>
              </property>
@@ -213,7 +212,7 @@
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load data from file&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load data CTRL+L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
                 <string/>
@@ -223,6 +222,9 @@
                  <width>22</width>
                  <height>22</height>
                 </size>
+               </property>
+               <property name="shortcut">
+                <string>Ctrl+L</string>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -305,7 +307,7 @@
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load data and window/plots layout&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load layout&lt;/p&gt;&lt;p&gt;CTRL+SHIFT+L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
                 <string/>
@@ -315,6 +317,9 @@
                  <width>22</width>
                  <height>22</height>
                 </size>
+               </property>
+               <property name="shortcut">
+                <string>Ctrl+Shift+L</string>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -339,7 +344,7 @@
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save window/plots layout&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save window/plots layout&lt;/p&gt;&lt;p&gt;CTRL+SHIFT+S&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
                 <string/>
@@ -349,6 +354,9 @@
                  <width>22</width>
                  <height>22</height>
                 </size>
+               </property>
+               <property name="shortcut">
+                <string>Ctrl+Shift+S</string>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -481,7 +489,6 @@
              <property name="font">
               <font>
                <pointsize>9</pointsize>
-               <weight>50</weight>
                <bold>false</bold>
               </font>
              </property>
@@ -905,7 +912,6 @@
              <property name="font">
               <font>
                <pointsize>9</pointsize>
-               <weight>50</weight>
                <bold>false</bold>
               </font>
              </property>
@@ -1367,7 +1373,7 @@
                      <string>tt</string>
                     </property>
                     <property name="icon">
-                     <iconset>
+                     <iconset resource="resource.qrc">
                       <normaloff>:/style_light/line_tracker_1.png</normaloff>:/style_light/line_tracker_1.png</iconset>
                     </property>
                     <property name="iconSize">
@@ -1685,7 +1691,6 @@
                    <widget class="QLabel" name="label">
                     <property name="font">
                      <font>
-                      <weight>75</weight>
                       <bold>true</bold>
                      </font>
                     </property>
@@ -1735,7 +1740,6 @@
                    <widget class="QLabel" name="label_2">
                     <property name="font">
                      <font>
-                      <weight>75</weight>
                       <bold>true</bold>
                      </font>
                     </property>
@@ -1792,7 +1796,7 @@
      <x>0</x>
      <y>0</y>
      <width>1248</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -1866,7 +1870,7 @@
   </action>
   <action name="actionReportBug">
    <property name="icon">
-    <iconset>
+    <iconset resource="resource.qrc">
      <normaloff>:/resources/github.png</normaloff>:/resources/github.png</iconset>
    </property>
    <property name="text">
@@ -1927,7 +1931,7 @@
   </action>
   <action name="actionShare_the_love">
    <property name="icon">
-    <iconset>
+    <iconset resource="resource.qrc">
      <normaloff>:/resources/twitter.png</normaloff>:/resources/twitter.png</iconset>
    </property>
    <property name="text">
@@ -1953,6 +1957,8 @@
    <header location="global">menubar.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
