@@ -213,7 +213,7 @@
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load data from file&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load data CTRL+L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
                 <string/>
@@ -223,6 +223,9 @@
                  <width>22</width>
                  <height>22</height>
                 </size>
+               </property>
+               <property name="shortcut">
+                <string>Ctrl+L</string>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -305,7 +308,7 @@
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load data and window/plots layout&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Load layout&lt;/p&gt;&lt;p&gt;CTRL+SHIFT+L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
                 <string/>
@@ -315,6 +318,9 @@
                  <width>22</width>
                  <height>22</height>
                 </size>
+               </property>
+               <property name="shortcut">
+                <string>Ctrl+Shift+L</string>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -339,7 +345,7 @@
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
-                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save window/plots layout&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save window/plots layout&lt;/p&gt;&lt;p&gt;CTRL+SHIFT+S&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                </property>
                <property name="text">
                 <string/>
@@ -349,6 +355,9 @@
                  <width>22</width>
                  <height>22</height>
                 </size>
+               </property>
+               <property name="shortcut">
+                <string>Ctrl+Shift+S</string>
                </property>
                <property name="flat">
                 <bool>true</bool>
