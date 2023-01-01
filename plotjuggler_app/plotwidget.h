@@ -156,6 +156,8 @@ private slots:
 
   void on_pasteAction_triggered();
 
+  void changeLineStyle();
+
 private slots:
 
   void canvasContextMenuTriggered(const QPoint& pos);
@@ -169,6 +171,7 @@ private:
   QAction* _action_split_horizontal;
   QAction* _action_split_vertical;
   QAction* _action_data_statistics;
+  QAction* _action_changeLineStyle;
 
   QAction* _action_zoomOutMaximum;
   QAction* _action_zoomOutHorizontally;
@@ -218,6 +221,7 @@ private:
                                      const QString& transform_ID = {}) override;
 
   double _time_offset;
+  int _line_style = 0;
 
   Range _custom_Y_limits;
 
